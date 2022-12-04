@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(24, 24, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root{
+    --light-color:rgb(217,176,255);
+    --btn-color:rgb(100,61,136);
+    --light-out-color:rgba(191,123,255,0.781);
+}
+
+button{
+    padding: 12px;
+    color:var(--light-color);
+    border: 0.25em solid var(--light-color);
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 0 1em .25em var(--light-color),
+                0 0 4em 1em var(--light-out-color),
+                inset 0 0 .75em .25em var(--light-color);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+button:hover{
+    color: var(--btn-color);
+    background-color: var(--light-color);
+    box-shadow: 0 0 1em .25em var(--light-color),
+                0 0 4em 2em var(--light-out-color),
+                inset 0 0 .75em .25em var(--light-color);
+}
+
+button:active{
+    box-shadow: 0 0 .6em .25em var(--light-color),
+                0 0 2.5em 2em var(--light-out-color),
+                inset 0 0 .5em .25em var(--light-color);
+}
